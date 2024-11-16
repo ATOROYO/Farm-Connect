@@ -23,3 +23,12 @@
   font-size: 1.2rem;
   color: #555;
 }
+
+.about-mission,
+.about-vision {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
