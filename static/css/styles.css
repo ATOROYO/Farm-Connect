@@ -38,3 +38,8 @@
   width: 50%;
   border-radius: 8px;
 }
+
+.about-mission .content,
+.about-vision .content {
+  flex: 1;
+}
