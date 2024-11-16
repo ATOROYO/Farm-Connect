@@ -4,3 +4,11 @@
   line-height: 1.6;
   padding: 20px;
 }
+
+.about-header {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 50px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
