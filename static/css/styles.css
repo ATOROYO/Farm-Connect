@@ -32,3 +32,9 @@
   gap: 20px;
   margin-bottom: 40px;
 }
+
+.about-mission img,
+.about-vision img {
+  width: 50%;
+  border-radius: 8px;
+}
