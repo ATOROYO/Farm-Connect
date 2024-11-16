@@ -43,3 +43,27 @@
 .about-vision .content {
   flex: 1;
 }
+
+.about-values {
+  text-align: center;
+  background: #e6fffa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.about-values h2 {
+  font-size: 1.8rem;
+  color: #2c7a7b;
+  margin-bottom: 20px;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
