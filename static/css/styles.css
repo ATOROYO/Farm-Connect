@@ -96,3 +96,28 @@
   color: #2c7a7b;
   margin-bottom: 20px;
 }
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  background: #e6fffa;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.stat p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c7a7b;
+}
