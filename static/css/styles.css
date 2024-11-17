@@ -172,3 +172,21 @@
   color: #2c7a7b;
   margin-bottom: 20px;
 }
+
+.opportunity {
+  background: #e6fffa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.opportunity h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.opportunity p {
+  color: #555;
+  margin-bottom: 10px;
+}
