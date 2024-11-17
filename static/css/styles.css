@@ -121,3 +121,13 @@
   font-weight: bold;
   color: #2c7a7b;
 }
+
+.product-listings {
+  margin-bottom: 30px;
+}
+
+.product-listings h2 {
+  font-size: 1.8rem;
+  color: #2c7a7b;
+  margin-bottom: 20px;
+}
