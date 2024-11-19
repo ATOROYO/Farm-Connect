@@ -261,3 +261,9 @@
   color: #2c7a7b;
   margin-bottom: 20px;
 }
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
