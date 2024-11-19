@@ -216,3 +216,13 @@
   font-size: 1.2rem;
   color: #555;
 }
+
+.overview {
+  margin-bottom: 30px;
+}
+
+.overview h2 {
+  font-size: 1.8rem;
+  color: #2c7a7b;
+  margin-bottom: 20px;
+}
