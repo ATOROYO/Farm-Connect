@@ -190,3 +190,10 @@
   color: #555;
   margin-bottom: 10px;
 }
+
+/* Suppliers page Styling Start here  */
+.supplier-dashboard {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  padding: 20px;
+}
