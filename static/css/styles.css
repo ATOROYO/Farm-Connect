@@ -282,3 +282,13 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
+
+.product h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product p {
+  color: #555;
+  margin-bottom: 10px;
+}
