@@ -251,3 +251,13 @@
   font-weight: bold;
   color: #2c7a7b;
 }
+
+.manage-products {
+  margin-bottom: 30px;
+}
+
+.manage-products h2 {
+  font-size: 1.8rem;
+  color: #2c7a7b;
+  margin-bottom: 20px;
+}
