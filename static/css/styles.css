@@ -302,3 +302,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.farmer-requests h2 {
+  font-size: 1.8rem;
+  color: #2c7a7b;
+  margin-bottom: 20px;
+}
