@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
   </head>
   <body>
-    <header class="navbar">
-      <a href="/">Home</a>
-      <a href="/about/">About Us</a>
-      <a href="/contact/">Contact</a>
-    </header>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/marketplace/">Marketplace</a></li>
+          <li><a href="/investments/">Investments</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>{% block content %} {% endblock %}</main>
 
