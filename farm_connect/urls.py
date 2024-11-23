@@ -8,5 +8,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', about_view, name='about'),
     path('marketplace/farmer/dashboard/', farmer_dashboard, name='farmer_dashboard'),
-    path('supplier/dashboard/', supplier_dashboard, name='supplier_dashboard')
+    path('marketplace/supplier/dashboard/', supplier_dashboard, name='supplier_dashboard')
 ]
