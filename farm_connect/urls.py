@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from apps.marketplace.views import about_view
+from apps.marketplace.views import farmer_dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
