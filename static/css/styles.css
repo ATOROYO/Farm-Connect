@@ -1,7 +1,7 @@
 /* General Styling */
 /* Navbar Styles */
 .navbar {
-  background-color: #2a9d8f;
+  background-color: #213a58;
   color: white;
   padding: 10px 20px;
   font-family: Arial, sans-serif;
@@ -47,6 +47,7 @@
   color: #333;
   line-height: 1.6;
   padding: 20px;
+  width: 85%;
 }
 
 .about-header {
