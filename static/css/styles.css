@@ -49,6 +49,7 @@
   line-height: 1.6;
   padding: 20px;
   width: 85%;
+  margin: 0 auto;
 }
 
 .about-header {
@@ -220,7 +221,7 @@
 }
 
 .opportunity {
-  background: #e6fffa;
+  background: #80ee98;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
