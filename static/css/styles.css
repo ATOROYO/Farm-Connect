@@ -35,10 +35,11 @@
   color: white;
   font-size: 1rem;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .navbar .nav-links a:hover {
-  color: #264653;
+  color: #80ee98;
 }
 
 /* About page Styling Start here */
@@ -60,7 +61,7 @@
 
 .about-header h1 {
   font-size: 2.5rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 10px;
 }
 
