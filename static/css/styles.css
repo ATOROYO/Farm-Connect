@@ -86,7 +86,7 @@
 
 .about-header {
   text-align: center;
-  background: #80ee98;
+  /* background: #80ee98; */
   padding: 50px 20px;
   margin-bottom: 30px;
   border-radius: 8px;
@@ -150,7 +150,6 @@
 /* Farmers page Styling Start here */
 .farmer-dashboard {
   font-family: "Arial", sans-serif;
-  background: #80ee98;
   color: #333;
   padding: 20px;
   width: 85%;
