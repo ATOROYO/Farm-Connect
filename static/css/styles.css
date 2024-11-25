@@ -48,6 +48,15 @@
   color: #80ee98;
 }
 
+.edt-btn {
+  border-radius: 6px;
+  background: #0c6478;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  position: bottom;
+}
+
 /* About page Styling Start here */
 .about-page {
   font-family: "Arial", sans-serif;
