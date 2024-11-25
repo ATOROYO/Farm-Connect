@@ -92,7 +92,7 @@
 
 .about-values {
   text-align: center;
-  background: #e6fffa;
+  background: #80ee98;
   padding: 30px;
   border-radius: 8px;
   margin-top: 30px;
@@ -100,7 +100,7 @@
 
 .about-values h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
@@ -123,7 +123,7 @@
 
 .dashboard-header h1 {
   font-size: 2.5rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 10px;
 }
 
@@ -138,7 +138,7 @@
 
 .overview h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
@@ -148,7 +148,8 @@
 }
 
 .stat {
-  background: #e6fffa;
+  background: #80ee98;
+  color: #213a58;
   padding: 20px;
   border-radius: 8px;
   flex: 1;
@@ -164,7 +165,7 @@
 .stat p {
   font-size: 2rem;
   font-weight: bold;
-  color: #2c7a7b;
+  color: #213a58;
 }
 
 .product-listings {
