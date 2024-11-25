@@ -174,7 +174,7 @@
 
 .product-listings h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
@@ -205,7 +205,7 @@
 
 .add-product {
   margin-top: 20px;
-  background: #2c7a7b;
+  background: #0c6478;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -215,7 +215,7 @@
 
 .investment-opportunities h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
@@ -254,7 +254,7 @@
 
 .dashboard-header h1 {
   font-size: 2.5rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 10px;
 }
 
@@ -269,7 +269,7 @@
 
 .overview h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
@@ -279,7 +279,8 @@
 }
 
 .stat {
-  background: #e6fffa;
+  background: #80ee98;
+  color: #213a58;
   padding: 20px;
   border-radius: 8px;
   flex: 1;
@@ -295,7 +296,7 @@
 .stat p {
   font-size: 2rem;
   font-weight: bold;
-  color: #2c7a7b;
+  color: #213a58;
 }
 
 .manage-products {
@@ -304,7 +305,7 @@
 
 .manage-products h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
@@ -315,7 +316,7 @@
 }
 
 .product {
-  background: #f4f4f4;
+  background: #46dfb1;
   border-radius: 8px;
   padding: 15px;
   text-align: center;
@@ -341,7 +342,7 @@
 
 .add-product {
   margin-top: 20px;
-  background: #2c7a7b;
+  background: #0c6478;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -351,12 +352,12 @@
 
 .farmer-requests h2 {
   font-size: 1.8rem;
-  color: #2c7a7b;
+  color: #213a58;
   margin-bottom: 20px;
 }
 
 .request {
-  background: #e6fffa;
+  background: #80ee98;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
