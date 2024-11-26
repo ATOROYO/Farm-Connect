@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-center">Investment Opportunities</h1>
+
+  <h3 class="mt-4">Browse Projects</h3>
+  <div class="row">
+    {% for project in projects %}
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.description|truncatechars:100 }}</p>
+          <p>
+            <strong>Amount Required:</strong> ${{ project.amount_required }}
+          </p>
+          <p><strong>Amount Raised:</strong> ${{ project.amount_raised }}</p>
+          <a
+            href="{% url 'submit_proposal' project.id %}"
+            class="btn btn-primary"
+            >Submit Proposal</a
+          >
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h3 class="mt-4">Your Investments</h3>
+  <div>
+    {% if investments %}
+    <ul>
+      {% for investment in investments %}
+      <li>
+        <strong>{{ investment.project.title }}</strong> - ${{
+        investment.amount_invested }} {% if investment.is_completed %}
+        <span class="badge bg-success">Completed</span>
+        {% else %}
+        <span class="badge bg-warning">Ongoing</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>You have no investments yet.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
