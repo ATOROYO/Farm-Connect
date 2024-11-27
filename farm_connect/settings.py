@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.investments',
 ]
 
 MIDDLEWARE = [
@@ -98,6 +99,12 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Authentication and User Management
+LOGIN_URL = '/accounts/login/'  # Default login URL
+LOGIN_REDIRECT_URL = '/'        # Redirect after successful login
+LOGOUT_REDIRECT_URL = '/'       # Redirect after logout
+
 
 
 # Internationalization

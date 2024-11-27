@@ -11,4 +11,5 @@ urlpatterns = [
     path('marketplace/farmer/dashboard/', farmer_dashboard, name='farmer_dashboard'),
     path('marketplace/supplier/dashboard/', supplier_dashboard, name='supplier_dashboard'),
     path('investments/', include('apps.investments.urls')),
+    path('accounts/', include('django.contrib.auth.urls')), 
 ]
