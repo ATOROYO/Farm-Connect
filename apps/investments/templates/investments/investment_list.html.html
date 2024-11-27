@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment List</title>
+  </head>
+  <body>
+    <h1>Investment Proposals</h1>
+    <ul>
+      {% for investment in investments %}
+      <li>
+        {{ investment.investor_name }} - {{ investment.proposal_amount }} - {{
+        investment.description }}
+      </li>
+      {% empty %}
+      <li>No investments found.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,29 +1,23 @@
-from django.shortcuts import render, redirect
-from .models import FarmerProject, InvestmentProposal, InvestmentTracking
-from django.contrib.auth.decorators import login_required
-from .forms import ProposalForm
+from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
+from .forms import InvestmentProposalForm
+from .models import InvestmentProposal
 
-@login_required
-def investors_view(request):
-    projects = FarmerProject.objects.filter(is_funded=False)
-    investments = InvestmentTracking.objects.filter(investor=request.user)
-    context = {
-        'projects': projects,
-        'investments': investments,
-    }
-    return render(request, 'investments/investors.html', context)
-
-@login_required
-def submit_proposal(request, project_id):
-    project = FarmerProject.objects.get(id=project_id)
+def submit_proposal(request):
     if request.method == 'POST':
-        form = ProposalForm(request.POST)
+        form = InvestmentProposalForm(request.POST)
         if form.is_valid():
-            proposal = form.save(commit=False)
-            proposal.investor = request.user
-            proposal.project = project
-            proposal.save()
-            return redirect('investors')
+            form.save()  # Save the form to the database
+            return render(request, 'investments/thank_you.html')
     else:
-        form = ProposalForm()
-    return render(request, 'investments/proposal_form.html', {'form': form, 'project': project})
+        form = InvestmentProposalForm()
+
+    return render(request, 'investments/submit_proposal.html', {'form': form})
+
+def investment_list(request):
+    investments = InvestmentProposal.objects.all()
+    return render(request, 'investments/investment_list.html', {'investments': investments})
+
+def investment_detail(request, pk):
+    investment = get_object_or_404(InvestmentProposal, pk=pk)
+    return render(request, 'investments/investment_detail.html', {'investment': investment})

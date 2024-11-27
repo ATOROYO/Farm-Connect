@@ -1,7 +1,10 @@
 from django.urls import path
-from .views import investors_view, submit_proposal
+from . import views
 
 urlpatterns = [
-    path('investors/', investors_view, name='investors'),
-    path('submit-proposal/<int:project_id>/', submit_proposal, name='submit_proposal'),
+    path('', views.investment_list, name='investment_list'),  # List of investments
+    path('submit/', views.submit_proposal, name='submit_proposal'),  # Submit proposal
+    path('<int:pk>/', views.investment_detail, name='investment_detail'),  # Investment detail
 ]
+
+
