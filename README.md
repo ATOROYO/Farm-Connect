@@ -202,10 +202,10 @@ To learn more about the vision and details of the FarmConnect platform, please r
 
 This project is a collaborative effort by:
 
-[David Atoroyo Sika - Lead Developer](mailto:davidatoroyosika@gmail.com)
-[Patricia Akumu - Developer](mailto:akumupatricia25@gmail.com)
-[Ritah Wanyiri - Developer](mailto:ritahwanyiri@gmail.com)
-[Daniel Mule - Developer](mailto:danielmule638@gmail.com)
+**[David Atoroyo Sika - Lead Developer](mailto:davidatoroyosika@gmail.com)**
+**[Patricia Akumu - Developer](mailto:akumupatricia25@gmail.com)**
+**[Ritah Wanyiri - Developer](mailto:ritahwanyiri@gmail.com)**
+**[Daniel Mule - Developer](mailto:danielmule638@gmail.com)**
 
 ## Contributing
 
