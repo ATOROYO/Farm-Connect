@@ -22,6 +22,85 @@
   width: 85;
 }
 
+/* Contact Styling starts here */
+.contact {
+    background-color: #80ee98;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+
+.contact form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: #ffffff;
+    border: 2px solid #80ee98;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: black;
+    margin: 12px 0;
+}
+
+
+.field .item::placeholder {
+    color: rgba(12, 12, 12, 0.3);
+}
+
+form .textarea-field .item {
+    width: 450px;
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: #213a58;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+form button:hover {
+    background: transparent;
+    color: #213a58;
+    border-color: #213a58;
+}
+/* Contact styling ends here */
+
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
