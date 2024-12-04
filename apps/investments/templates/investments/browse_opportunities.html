@@ -1,27 +1,38 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container mt-5">
-  <h1 class="text-center">Investment Opportunities</h1>
-  <p class="text-center">
-    Discover projects from farmers looking for investment support.
-  </p>
-  <div class="row mt-4">
-    <!-- Placeholder for investment cards -->
-    <div class="col-md-4" v-for="opportunity in opportunities">
-      <div class="card">
-        <img
-          src="{% static 'images/opportunity_placeholder.jpg' %}"
-          class="card-img-top"
-          alt="Opportunity"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Project Name</h5>
-          <p class="card-text">
-            Brief description of the project and investment amount needed.
-          </p>
-          <a href="#" class="btn btn-primary">View Details</a>
-        </div>
-      </div>
+  <h1 class="text-center">Submit a Funding Proposal</h1>
+  <form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="project" class="form-label">Project Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="project"
+        name="project"
+        placeholder="Enter the project name"
+      />
     </div>
-  </div>
+    <div class="mb-3">
+      <label for="amount" class="form-label">Funding Amount</label>
+      <input
+        type="number"
+        class="form-control"
+        id="amount"
+        name="amount"
+        placeholder="Enter the funding amount"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="details" class="form-label">Proposal Details</label>
+      <textarea
+        class="form-control"
+        id="details"
+        name="details"
+        rows="5"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Proposal</button>
+  </form>
 </div>
 {% endblock %}
