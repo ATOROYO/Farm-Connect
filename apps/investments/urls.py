@@ -1,10 +1,12 @@
 from django.urls import path
-from . import views
+from .views import (
+    browse_opportunities_view,
+    submit_proposal_view,
+    track_investments_view
+)
 
 urlpatterns = [
-    path('', views.investment_list, name='investment_list'),  # List of investments
-    path('submit/', views.submit_proposal, name='submit_proposal'),  # Submit proposal
-    path('<int:pk>/', views.investment_detail, name='investment_detail'),  # Investment detail
+    path('investors/browse/', browse_opportunities_view, name='browse_opportunities'),
+    path('investors/proposal/', submit_proposal_view, name='submit_proposal'),
+    path('investors/track/', track_investments_view, name='track_investments'),
 ]
-
-
