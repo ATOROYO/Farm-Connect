@@ -1,7 +1,10 @@
 from django import forms
-from .models import InvestmentProposal
+from .models import FundingProposal
 
-class InvestmentProposalForm(forms.ModelForm):
+class FundingProposalForm(forms.ModelForm):
     class Meta:
-        model = InvestmentProposal
-        fields = ['investor_name', 'email', 'proposal_amount', 'description']
+        model = FundingProposal
+        fields = ['investor_name', 'amount', 'message']
+        widgets = {
+            'message': forms.Textarea(attrs={'rows': 4}),
+        }
