@@ -229,6 +229,6 @@ We welcome contributions from the community! If you would like to contribute:
 
 ## Conclusion
 
-Let me know if you need any further additions or modifications!
+Let us know if you need any further additions or modifications!
 
 ### THANKS!!!
