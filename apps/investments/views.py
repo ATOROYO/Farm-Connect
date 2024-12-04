@@ -1,23 +1,27 @@
-from django.shortcuts import render, get_object_or_404
-from django.shortcuts import render
-from .forms import InvestmentProposalForm
-from .models import InvestmentProposal
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import InvestmentOpportunity, FundingProposal
+from .forms import FundingProposalForm
 
-def submit_proposal(request):
+
+def browse_opportunities(request):
+    opportunities = InvestmentOpportunity.objects.all()
+    return render(request, 'investments/browse.html', {'opportunities': opportunities})
+
+
+def submit_proposal(request, opportunity_id):
+    opportunity = get_object_or_404(InvestmentOpportunity, id=opportunity_id)
     if request.method == 'POST':
-        form = InvestmentProposalForm(request.POST)
+        form = FundingProposalForm(request.POST)
         if form.is_valid():
-            form.save()  # Save the form to the database
-            return render(request, 'investments/thank_you.html')
+            proposal = form.save(commit=False)
+            proposal.investment_opportunity = opportunity
+            proposal.save()
+            return redirect('track_investments')
     else:
-        form = InvestmentProposalForm()
+        form = FundingProposalForm()
+    return render(request, 'investments/submit_proposal.html', {'form': form, 'opportunity': opportunity})
 
-    return render(request, 'investments/submit_proposal.html', {'form': form})
 
-def investment_list(request):
-    investments = InvestmentProposal.objects.all()
-    return render(request, 'investments/investment_list.html', {'investments': investments})
-
-def investment_detail(request, pk):
-    investment = get_object_or_404(InvestmentProposal, pk=pk)
-    return render(request, 'investments/investment_detail.html', {'investment': investment})
+def track_investments(request):
+    proposals = FundingProposal.objects.all()
+    return render(request, 'investments/track.html', {'proposals': proposals})
