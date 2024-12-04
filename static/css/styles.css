@@ -1,4 +1,165 @@
 /* General Styling */
+
+/* home page styling starts here */
+*{
+  margin: 0;
+  padding: 0;
+}
+.img1{
+  width: 100%;
+}
+.content_home{
+  display: flex;
+  margin: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #4f9571;
+  padding: 40px;
+  color:#c8cf92;
+
+
+}
+.content_home h2{
+  font-size: 30px;
+  margin-right: 20px;
+}
+.content_second{
+  padding-left: 20px;
+  
+
+}
+.content_three{
+  margin-top: 15px;
+}
+.content_three button{
+  background-color: #215349;
+  border: none;
+  border-radius: 3px;
+  color: #c8cf92;
+  padding: 10px;
+}
+
+.content_three button:hover{
+  background-color: #565613;
+}
+.main_body{
+  display: flex;
+  background-color: #44863f;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #c8cf92;
+}
+.body_main{
+  margin: 50px;
+}
+.body_main h2{
+  font-size: 30px;
+}
+.body_main p{
+  font-size: 13px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.main_body button{
+  border: none;
+  background-color:#2b5a16;
+  color: #c8cf92;
+  padding: 7px;
+  border-radius: 5px;
+}
+.main_body button:hover{
+  background-color:#0c350b ;
+}
+.services_intro{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.services_first{
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 20px;
+  
+  
+  
+}
+.services_first h2{
+  font-size:40px ;
+  
+}
+.services_first p{
+  font-size: 17px;
+}
+.services_main{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-around;
+  gap: 20px;
+  
+  
+  
+}
+.main_one{
+  background-color:#a5c268;
+}
+.services_main h2{
+  font-size: 20px;
+  
+  padding: 10px;
+
+}
+.services_main p{
+  font-size: 15px;
+  padding-left: 10px;
+  padding: 10px;
+}
+.img3{
+  height: 150px;
+  
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+    
+}
+.img4{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.container{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 50px;
+  margin-right: 50px;
+
+
+}
+
+.container_first{
+  display: flex;
+}
+.Discover{
+  margin-top: 40px;
+  font-size: 35px;
+  margin-right: 50px;
+}
+.container_second h2{
+  font-size: 20px;
+  
+  padding: 10px;
+}
+.container_second p{
+  font-size: 15px;
+  padding-left: 10px;
+  padding: 10px;
+
+}
+.container_second button{
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #73855a;
+}
 /* Navbar Styles */
 * {
   padding: 0;
