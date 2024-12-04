@@ -1,15 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Investment Detail</title>
-  </head>
-  <body>
-    <h1>Investment Detail</h1>
-    <p><strong>Investor Name:</strong> {{ investment.investor_name }}</p>
-    <p><strong>Email:</strong> {{ investment.email }}</p>
-    <p><strong>Proposal Amount:</strong> {{ investment.proposal_amount }}</p>
-    <p><strong>Description:</strong> {{ investment.description }}</p>
-  </body>
-</html>
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-5">
+  <h1 class="text-center">Investment Opportunities</h1>
+  <p class="text-center">
+    Discover projects from farmers looking for investment support.
+  </p>
+  <div class="row mt-4">
+    <!-- Placeholder for investment cards -->
+    <div class="col-md-4" v-for="opportunity in opportunities">
+      <div class="card">
+        <img
+          src="{% static 'images/opportunity_placeholder.jpg' %}"
+          class="card-img-top"
+          alt="Opportunity"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Project Name</h5>
+          <p class="card-text">
+            Brief description of the project and investment amount needed.
+          </p>
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
