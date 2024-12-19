@@ -227,6 +227,8 @@ We welcome contributions from the community! If you would like to contribute:
 
 ### Open a pull request and describe your changes.
 
+## Screenshots
+
 ## Conclusion
 
 Let us know if you need any further additions or modifications!
