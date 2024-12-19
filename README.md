@@ -232,6 +232,9 @@ We welcome contributions from the community! If you would like to contribute:
 Screenshot of the about page
 ![About Page](screenshots/About%20page.jpg)
 
+Screenshot of the farmers dashboard
+![About Page](screenshots/Farmer%20dashboard.jpg)
+
 ## Conclusion
 
 Let us know if you need any further additions or modifications!
