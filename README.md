@@ -230,6 +230,7 @@ We welcome contributions from the community! If you would like to contribute:
 ## Screenshots
 
 Screenshot of the about page
+![About Page](screenshots/About%20page.jpg)
 
 ## Conclusion
 
