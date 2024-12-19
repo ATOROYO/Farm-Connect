@@ -229,6 +229,8 @@ We welcome contributions from the community! If you would like to contribute:
 
 ## Screenshots
 
+Screenshot of the about page
+
 ## Conclusion
 
 Let us know if you need any further additions or modifications!
