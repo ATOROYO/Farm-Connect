@@ -10,3 +10,4 @@ urlpatterns = [
     path('investors/proposal/', submit_proposal_view, name='submit_proposal'),
     path('investors/track/', track_investments_view, name='track_investments'),
 ]
+
